@@ -1,0 +1,300 @@
+
+.light-theme {
+  background: url(img/fonlight.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.dark-theme {
+  background: url(img/fondark.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.theme-button{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 25px;
+    margin: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+}
+
+
+.parrow{
+    font-family:fantasy;
+    font-size: 18px; 
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
+
+}
+caption{
+    text-align: center;
+}
+.imgemoji{
+    height: 150px;
+    width: 150px;
+
+}
+.img1{
+   float: center;
+    width: 500px;
+    height: 300px ;
+    padding: 20px;
+}
+.img2{
+   float: center;
+    width: 600px;
+    height: 400px ;
+    padding: 10px;
+}
+.light-theme p{
+    text-align: center;
+    color: #FFFF00  ;
+}
+.dark-theme p{ 
+    text-align: center;
+    color: green;
+}
+.dark-theme div{
+    font-family:cursive;
+    
+    color: white;
+}
+.light-theme div{
+    font-family:cursive;
+    color: black;
+}
+.light-theme h1{
+text-align: center;
+font-style:italic;
+font-family:serif;
+text-decoration:underline;
+color: red;
+}
+.dark-theme h1{
+text-align: center;
+font-style:italic;
+font-family:serif;
+text-decoration:underline;
+color: blue  ;
+}
+.light-theme td{
+	background-color: #FFC0CB;  
+    font-family:sans-serif;
+	border-left:2px dashed black;
+}
+.dark-theme td{
+    background-color: #000080;  
+    font-family:sans-serif;
+    border-left:2px dashed #FF8000;
+    text-align: center;
+}
+/*.light-theme ol{ 
+	list-style-image: url(img/play-icon light teme.png) 
+
+}
+.dark-theme ol{
+    list-style-image: url(img/Play-icon.png) 
+
+}
+.light-theme ul { 
+    list-style-image: url(img/light icon.png) 
+
+}
+.dark-theme ul{
+    list-style-image: url(img/icon dark.png) 
+
+}*/
+.light-theme .rounded {
+counter-reset: li; 
+list-style: none; 
+font: 16px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+width: 400px;
+margin-left: 15px;
+}
+.dark-theme .rounded{
+    counter-reset: li; 
+list-style: none; 
+font: 16px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 red;
+width: 400px;
+margin-left: 15px;
+text-align: center;
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: #DAD2CA;
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #8FD4C1;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
+.dark-theme .smthMe{
+    grid-gap:20px;
+    border: 1px black solid;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    background-image: url(img/gridd.jpg);
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"header header header"
+                        "words imgme citata"
+}
+.light-theme .smthMe{
+	
+	grid-gap:20px;
+	border: 1px black solid;
+	font-size: 25px;
+    justify-content: center;
+	text-align: center;
+	display: grid;
+    background-image: url(img/gridd.jpg);
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:"header header header"
+						"words imgme citata"
+}
+.header{
+	margin: 20px;
+	grid-area: header;
+
+}
+.words{
+    margin: 20px;
+	
+	grid-area: words;
+}
+.imgMe{
+    margin: 20px;
+	grid-area: imgme;
+
+}
+.citata{
+    margin: 20px;
+	grid-area: citata;
+
+}
+
+.light-theme .name{
+    text-align: center;
+font-style:italic;
+font-family:serif;
+color: orange;
+font-size: 60px;
+
+}
+.dark-theme .name{
+    text-align: center;
+font-style:italic;
+font-family:monospace;
+color: blue;
+font-size: 60px;
+
+}
+div img{
+    height: 400px;
+    width: 400px;
+}
+/* Слайдер: */
+.slider{
+    max-width: 60%;
+    /* Положение элемента устанавливается относительно его исходной позиции: */
+    position: relative;
+    /* Центрируем по горизонтали: */
+    margin: auto;
+    height: 400px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+    /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+    
+    width: 100%;
+    height: 400px;
+}
+
+/* Кнопки назад и вперёд: */
+.slider .previous, .slider .next {
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Оформление самих кнопок: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Плавное появление фона при наведении курсора: */
+    transition: 0.6s ease;
+    /* Скругление границ: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
+}
